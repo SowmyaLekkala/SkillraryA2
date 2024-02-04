@@ -12,7 +12,7 @@ public class AddCategoryTest extends BaseClass{
 	@Test
 	public void addCategoryTest() throws InterruptedException {
 		SoftAssert soft=new SoftAssert();
-		
+		//This test verify if user is able to create category
 		home.clickCoursesTab();
 		home.clickCategoryLink();
 		soft.assertTrue(category.getPageHeader().contains("Category"));
